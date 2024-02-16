@@ -10,6 +10,14 @@ header {
     height: 120px;
     margin-bottom: 30px;
 }
+.dsc_tl {
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    float: right;
+    color: white;
+    
+}
 #title {
   color: white;
   font-size: 70px;
@@ -46,7 +54,7 @@ nav {
     height: 40px; 
     position: relative; 
     background-color: black;
-    border: 1px solid;
+    border: 3px solid;
     border-radius: 50px;
     border-color: yellow;
 }
@@ -55,6 +63,10 @@ nav {
    position: absolute;
    margin-bottom: 8px;
     
+}
+#logo:hover {
+    transform: rotate(360deg);
+    transition-duration: 1.0s;
 }
 
 #myLinks {
@@ -76,7 +88,7 @@ nav {
 .B:hover {
     background-color: black;
     box-shadow: none;
-    font-size: 20px;
+    /* font-size: 20px; */
     transition: 0.5s;
 
 }
@@ -140,7 +152,7 @@ nav {
 }
 .cars {
     height: 900px;
-    width: 100%;
+    width: 100%;  /* width:auto, and overflow:hidden; */
     margin-top: 150px;
     margin-top: 5px;
     /* background-color: yellow; */
@@ -206,6 +218,7 @@ nav {
     text-align: center;
     position: relative;
     top: 50%;
+    cursor: default;
 
     /* padding: 30%; */
     font-family: Arial, Helvetica, sans-serif;
@@ -385,4 +398,26 @@ input:checked + label .description {
 
 
 
+/* FOOTER */
+.footer {
+    margin-top: 200px;
+    background-color: black;
+    color:yellow;
+    text-align: center;
+    padding: 20px 0;
+    text-decoration: none;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+    
+}
+
+.social-icons a:hover {
+    color:yellow;
+    text-decoration: none;
+}
 
