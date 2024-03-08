@@ -2,6 +2,7 @@ html {
     background-color: black;
     filter: blur(95%);
     scroll-behavior: smooth;
+    
 }
 /* resmponsive settings */
 /* the page-top elements  */
@@ -13,14 +14,17 @@ header {
     flex-direction: column;
     align-items: center;
     cursor: default;
+  
 }
 header p {
-    margin: 0 auto;
+    text-align: center;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: lowercase;
 
 }
+
+
 .dsc_tl {
     color: white;
     font-family:Arial, Helvetica, sans-serif;
@@ -73,7 +77,7 @@ nav {
 }
 
 #logo {
-   position: absolute;
+   position: relative;
    margin-bottom: 8px;
     
 }
@@ -85,6 +89,7 @@ nav {
 #myLinks {
     display: flex;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-direction: row;
 }
 
 #myLinks a {
