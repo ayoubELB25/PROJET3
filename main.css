@@ -231,7 +231,7 @@ nav {
 .show1:hover {
     background-color: black;
     color: yellow;
-    animation-name: explore;
+    /* animation-name: explore; */
     animation-delay: 5s;
     animation-duration: 3s;
      animation-fill-mode: forwards;
@@ -245,9 +245,9 @@ nav {
     z-index: 2;
     /* height: 116%; */
 }
-.show2:hover {
+/* .show2:hover {
     z-index: 5;
-}
+} */
 @keyframes explore {
     0% {
         z-index: 3;
@@ -256,6 +256,12 @@ nav {
         z-index: 1 ;
         
     }
+}
+.show1 {
+    z-index: 0;
+}
+.show2{
+    z-index: 10;
 }
 
 /* EMEYA *****************************************************************************/
