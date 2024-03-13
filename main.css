@@ -195,7 +195,7 @@ nav {
     margin-bottom: 5px;
 }
 .cars {
-    height: 900px;
+    height: 1600px;
     width: 100%;  /* width:auto, and overflow:hidden; */
     margin-top: 150px;
     margin-top: 5px;
@@ -492,7 +492,7 @@ input:checked + #lb4 {
 } */  
 
 
-/* /////////////////////////////////////////////////_ND CARD /////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////_ND CARD /////////////////////////////////////////////////////////////////////////// */
 
 .nd_card {
     display: flex;
@@ -533,15 +533,18 @@ input:checked + #lb4 {
 }
 .cont1 div {
     background-color: yellow;
-    height: 230px;
-    width: 80px;
-    clip-path: polygon(50% 0, 100% 0%, 50% 100%, 0% 100%);
+    height: 350px;
+    width: 140px;
+    clip-path: polygon(60% 0, 100% 0, 40% 100%, 0% 100%);
+
 
 }
 .cont1{
     animation-name: flt;
     animation-duration: 4s;
     animation-iteration-count: 1;
+    display: flex;
+    align-items: center;
 }
 .cont2l {
     border: 1px solid red;
@@ -561,39 +564,62 @@ input:checked + #lb4 {
 }
 .bx {
     position: relative;
-    width: 300px;
-    height: 400px;
+    width: 550px;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: black;
     overflow: hidden;
     border-radius: 20px;
+    background-image: url('images/CARD_anm_evija.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease;
+    
 }
-.bx::before{
+.bx:hover::before{
     content: '';
     position: absolute;
     width: 188px;
     height: 148%;
-    background-color: white;
+    background-color: yellow;
     box-shadow: 0 0 20px black;
     animation:crd_anim 4s linear infinite;
 }
-.bx::after{
+.bx:hover::after{
     content: '';
     position: absolute;
     inset: 10px;
-    background-color: dodgerblue;
+    /* background-color: dodgerblue; */
+    background-image: url('images/CARD_anm_evija.jpeg');
+    background-size: 200%;
+    transition-duration: 2s;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 16px;
+    animation-name: imgsize;
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
 }
 @keyframes crd_anim {
     0%{
         transform: rotate(0deg);
+        
     }
     100%{
         transform: rotate(360deg);
     }
     
+}
+@keyframes imgsize {
+    0% {
+        background-size: 160%;
+    }
+    100% {
+        background-size: 200%;
+    }
 }
 
 
