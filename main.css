@@ -321,6 +321,10 @@ nav {
 }
 /* THE ANIMATIONS */
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
 /* CARD ANIMATION */
 * {
     box-sizing: border-box;
@@ -488,8 +492,109 @@ input:checked + #lb4 {
 } */  
 
 
+/* /////////////////////////////////////////////////_ND CARD /////////////////////////////////////////////////////////////////////////// */
+
+.nd_card {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+.nd {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+@keyframes flt{
+    0% { 
+        position: relative;
+        right: 9000px;
+        
+    }
+    50% {
+        position: relative;
+        right: 4500px;
+    }
+    100%{
+        position: relative;
+        right: 0px;
+    }
+    
+}
 
 
+.cont1 {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border: 1px solid red;
+    width: 50vw;
+
+
+}
+.cont1 div {
+    background-color: yellow;
+    height: 230px;
+    width: 80px;
+    clip-path: polygon(50% 0, 100% 0%, 50% 100%, 0% 100%);
+
+}
+.cont1{
+    animation-name: flt;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+.cont2l {
+    border: 1px solid red;
+    width: 10px;
+    height: 10px;
+}
+
+/* ANIMATION BORDER */
+.cont2 {
+    border: 1px solid blue;
+    width: 50vw;
+    height: 400pxpx;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.bx {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.bx::before{
+    content: '';
+    position: absolute;
+    width: 188px;
+    height: 148%;
+    background-color: white;
+    box-shadow: 0 0 20px black;
+    animation:crd_anim 4s linear infinite;
+}
+.bx::after{
+    content: '';
+    position: absolute;
+    inset: 10px;
+    background-color: dodgerblue;
+    border-radius: 16px;
+}
+@keyframes crd_anim {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
 
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
