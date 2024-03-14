@@ -526,7 +526,6 @@ input:checked + #lb4 {
     display: flex;
     flex-direction: row;
     overflow: hidden;
-    border: 1px solid red;
     width: 50vw;
 
 
@@ -541,7 +540,7 @@ input:checked + #lb4 {
 }
 .cont1{
     animation-name: flt;
-    animation-duration: 4s;
+    animation-duration: 2.5s;
     animation-iteration-count: 1;
     display: flex;
     align-items: center;
@@ -554,10 +553,9 @@ input:checked + #lb4 {
 
 /* ANIMATION BORDER */
 .cont2 {
-    border: 1px solid blue;
+
     width: 50vw;
-    height: 400pxpx;
-    background-color: red;
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;  
@@ -568,7 +566,7 @@ input:checked + #lb4 {
     height: 500px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:center;
     background-color: black;
     overflow: hidden;
     border-radius: 20px;
@@ -586,7 +584,7 @@ input:checked + #lb4 {
     height: 148%;
     background-color: yellow;
     box-shadow: 0 0 20px black;
-    animation:crd_anim 4s linear infinite;
+    animation:crd_anim 3s linear infinite;
 }
 .bx:hover::after{
     content: '';
@@ -603,6 +601,7 @@ input:checked + #lb4 {
     animation-duration: 1.2s;
     animation-iteration-count: 1;
 }
+
 @keyframes crd_anim {
     0%{
         transform: rotate(0deg);
@@ -621,8 +620,28 @@ input:checked + #lb4 {
         background-size: 200%;
     }
 }
-
-
+.nd_desc {
+    height: 130px;
+    width: 90%;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 7;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50%;
+    visibility: hidden;
+    
+}
+.nd_desc h4 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+} 
+.bx:hover  .nd_desc {
+    visibility: visible;
+   
+}
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 
