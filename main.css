@@ -78,7 +78,7 @@ header {
 nav {
     position: sticky;
 }
-.topnav {
+.topnv {
     display: flex;
     justify-content: center; 
     align-items: center; 
@@ -194,8 +194,8 @@ nav {
     object-fit: cover;
     margin-bottom: 5px;
 }
-.cars {
-    height: 1600px;
+.car {
+    height: 1900px;
     width: 100%;  /* width:auto, and overflow:hidden; */
     margin-top: 150px;
     margin-top: 5px;
@@ -333,14 +333,14 @@ nav {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.wrapper {
+.wrpper {
     width: 100%;     /* make the width adjusteble */
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.container {
+.contner {
     height: 400px;
     display: flex;
     flex-wrap:nowrap;
@@ -366,7 +366,7 @@ nav {
     display: flex;
     flex-wrap: nowrap;
 }
-.crd > .rw >.icon {
+.crd > .rw >.icn {
     background: black;    /* remeber the hover */
     color: white;
     /* border-radius: 50%; */
@@ -417,7 +417,7 @@ input:checked + label .description {
     transform: translateY(0) !important;
 
 }
-input:checked .icon,.description {
+input:checked .icn,.description {
     background-color: rgba(0, 0, 0, 0.8); /* Black background color with 50% opacity */
     
     border-radius: 90px;
@@ -643,8 +643,8 @@ input:checked + #lb4 {
    
 }
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-
+/*////////////////////////// CAROUSSEL /////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 /* FOOTER */
 footer {
