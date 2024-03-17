@@ -24,10 +24,14 @@ header img {
     border-radius: 70px;
 }
 header hr {
-    border-color: yellow;
+    border: 2px solid rgba(255, 255, 0 , 1);
+    border-right: 20px;
     margin: 0 auto;
     margin-top: 30px;
     width: 75%;
+    
+    
+    
 }
 header p {
     margin-top: 60px;
@@ -188,6 +192,7 @@ nav {
     margin-bottom: 5px;
     position: relative;
     object-fit: cover;
+    box-shadow: rgba(255, 255, 0, 0.5) 0px -15px 25px, rgba(255, 255, 0, 0.3) 0px -5px 10px;
 }
 #vid {
     
@@ -195,12 +200,16 @@ nav {
     margin-bottom: 5px;
 }
 .car {
-    height: 1900px;
+    height: 1960px;
     width: 100%;  /* width:auto, and overflow:hidden; */
     margin-top: 150px;
     margin-top: 5px;
+    
     /* background-color: yellow; */
     position: relative;
+    border-radius: 1px;
+    box-shadow: rgba(255, 255, 0, 0.5) 0px 15px 25px, rgba(255, 255, 0, 0.3) 0px 5px 10px;
+    
 }
 .show1,
 .show2 {
@@ -598,10 +607,11 @@ input:checked + #lb4 {
     background-repeat: no-repeat;
     border-radius: 16px;
     animation-name: imgsize;
-    animation-duration: 1.2s;
+    animation-duration: .8s;
     animation-iteration-count: 1;
+    animation-timing-function: linear;
+   
 }
-
 @keyframes crd_anim {
     0%{
         transform: rotate(0deg);
@@ -621,7 +631,7 @@ input:checked + #lb4 {
     }
 }
 .nd_desc {
-    height: 130px;
+    height: 145px;
     width: 90%;
     border-radius: 20px;
     overflow: hidden;
