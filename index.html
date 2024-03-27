@@ -49,15 +49,15 @@
         <div class="_vid"><video id="vid" width="100%"  autoplay muted loop><source src="videos/evija_vid.mp4" type="video/mp4"></video></div>
          <!-- this div position is relative-->
         <div id="evija" class="car">
-            <div  class="show1" ><h1 class="desc_ttl"> EXPLORE THE EVIJA <i  class="fa-solid fa-arrow-right"></i></h1> </div>
-            <div class="show2">
+            <div  id="show1" ><button id="clickit"><h1 class="desc_ttl"> EXPLORE THE EVIJA <i  class="fa-solid fa-arrow-right"></i></h1></button></div>
+            <div id="show2">
                 <div class="st_CARD" >
                  <div class="wrpper">
                     <div class="contner">
                         <input type="radio" name="slide" id="evija1" checked>
                         <label for="evija1" class="crd" id="lb1">
                             <div class="rw">
-                                <div class="icn" style="color: yellow; background-color: black;">1</div>
+                                <div class="icn" style="color: yellow; background-color: black;">A</div>
                                 <div class="description">
                                     <h4>DYNAMICALLY ACCOMPLISHED</h4>
                                     <p>Unprecedented performance, enabled by electricity. Years of pioneering heritage, forged by British engineering. Evija was created for the drivers</p>
@@ -68,7 +68,7 @@
                         <input type="radio" name="slide"id="evija2" checked>
                         <label for="evija2" class="crd" id="lb2">
                             <div class="rw">
-                                <div class="icn" style="color: yellow; background-color: black;">2</div>
+                                <div class="icn" style="color: yellow; background-color: black;">B</div>
                                 <div class="description">
                                     <h4>IMPOSSIBLY LIGHTWEIGHT</h4>
                                     <p>Luxury without compromise. Every superfluous detail has been trimmed for a bleeding-edge driving experience</p>
@@ -88,7 +88,7 @@
                         <input type="radio" name="slide"id="evija3" checked>
                         <label for="evija3" class="crd" id="lb3">
                             <div class="rw">
-                                <div class="icn" style="color: yellow; background-color: black;">3</div>
+                                <div class="icn" style="color: yellow; background-color: black;">C</div>
                                 <div class="description">
                                     <h4>EVERYDAY ELEGANCE</h4>
                                     <p>As usable around town as it is on the track, the Evija is designed for everyday use. When it looks this good it would be criminal not to show it off</p>
@@ -108,7 +108,7 @@
                         <input type="radio" name="slide" id="evija4" checked>
                         <label for="evija4" class="crd" id="lb4">
                             <div class="rw">
-                                <div class="icn" style="color: yellow; background-color: black;" >4</div>
+                                <div class="icn" style="color: yellow; background-color: black;" >D</div>
                                 <div class="description">
                                     <h4>COMPLETE CONTROL</h4>
                                     <p>Intelligent interfaces close the gap between car and driver, with ergonomic multitouch controls for driver and passenger </p>
@@ -214,7 +214,7 @@
         <div class="_vid"><video id="vid" width="100%"  autoplay muted loop><source src="videos/emeya_vid.webm" type="video/mp4"></video></div>
          
         <div id="emeya" class="cars" style="display: none;">
-            <div  class="show1" ><h1 class="desc_ttl"> EXPLORE THE EMEYA <i  class="fa-solid fa-arrow-right"></i></h1> </div>
+            <div  class="show1" ><h1 class="desc_ttl"> EXPLORE THE EMEYA<button id="click"><i class="fa-solid fa-arrow-right"></i></button></h1> </div>
             <div class="show2">
                 <div class="st_CARD" >
                  <div class="wrapper">
@@ -438,6 +438,15 @@
          
   
         
- 
+        <script>
+            document.getElementById('clickit').addEventListener('click', function() {
+            var box1 = document.getElementById('show1');
+            var box2 = document.getElementById('show2');
+
+            // Swap z-index values
+            box1.style.zIndex = 0;
+            });
+
+        </script>
     </body>
 </html>
